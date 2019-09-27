@@ -1,0 +1,21 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    bus:
+      trace:
+        enable: true
+    config:
+      server:
+        git:
+          uri: https://github.com/ityouzi/aiordersystemcloud.git #git仓库地址
+          search-paths: config #git仓库路径
+          username: ityouzi     #git仓库用户名
+          password: ityouzi     #git仓库密码
+      label: master   #git仓库的分支
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
