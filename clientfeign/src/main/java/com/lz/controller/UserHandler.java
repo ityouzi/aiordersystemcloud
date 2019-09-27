@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("user")
 public class UserHandler {
 
+
+
 	@Autowired
 	private UserFeign userFeign;
 	@Autowired
