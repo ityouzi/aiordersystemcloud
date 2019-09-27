@@ -1,8 +1,8 @@
 spring:
   cloud:
     config:
-      name: user  #对应的配置文件名称
-      label: maser  #git仓库分支名称
+      name: user      #对应的配置文件名称
+      label: master   #git仓库分支名称
       discovery:
         enabled: true
         service-id: configserver #连接的配置中心名称
